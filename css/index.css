@@ -169,17 +169,24 @@ img {
   margin: 0 auto;
 }
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 0;
+  padding: 2% 0;
   border-bottom: 2px dashed #C0C0C0;
 }
-.nav a {
+.navigation .menu {
+  margin-left: 18%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .nav {
+  margin-right: 24%;
+}
+.navigation .nav a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: #212529;
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 0 10px;
 }
 .footer {
