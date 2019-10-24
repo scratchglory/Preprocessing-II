@@ -28,11 +28,17 @@
   .nav {
     margin-right: 24%;
     a {
+      padding: 5px;
       text-decoration: none;
       font-family: "Roboto", sans-serif;
       color: @font-color;
       font-size: 1.75rem;
       margin: 0 10px;
+
+      // STRETCH
+      &:hover {
+        .hover(gold, @eastern-blue, 22px);
+      }
     } // a
 
     @media @mobile {

@@ -196,11 +196,18 @@ img {
   margin-right: 24%;
 }
 .navigation .nav a {
+  padding: 5px;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   color: #212529;
   font-size: 1.75rem;
   margin: 0 10px;
+}
+.navigation .nav a:hover {
+  background-color: gold;
+  color: #17a2b8;
+  font-size: 22px;
+  font-family: "Sofia";
 }
 @media (max-width: 500px) {
   .navigation .nav {
@@ -223,7 +230,7 @@ img {
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 95%;
+    max-width: 92%;
   }
 }
 .main-header {
@@ -324,6 +331,12 @@ img {
   font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
+}
+.home .content-pick .btn:hover {
+  background-color: gold;
+  color: #17a2b8;
+  font-size: 24px;
+  font-family: "Sofia";
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
