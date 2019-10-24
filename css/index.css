@@ -170,7 +170,7 @@ img {
 }
 .navigation {
   padding: 2% 0;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .navigation .menu {
   margin-left: 18%;
@@ -178,6 +178,19 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .navigation .menu h1 {
+    margin: 3% 0;
+  }
+}
+@media (max-width: 500px) {
+  .navigation .menu {
+    margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .navigation .nav {
   margin-right: 24%;
@@ -189,10 +202,18 @@ img {
   font-size: 1.75rem;
   margin: 0 10px;
 }
+@media (max-width: 500px) {
+  .navigation .nav {
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -200,8 +221,13 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 95%;
+  }
+}
 .main-header {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .main-header .welcome {
   padding: 15px 0;
@@ -212,20 +238,41 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 98%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -244,7 +291,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -255,8 +302,8 @@ img {
 .home .content-pick .btn {
   width: 85%;
   padding: 12px 28px;
-  background-color: #17A2B8;
-  color: #FFFFFF;
+  background-color: #17a2b8;
+  color: #ffffff;
   border-radius: 14px;
   font-size: 1.5rem;
   text-align: center;
