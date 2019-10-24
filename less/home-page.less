@@ -1,13 +1,18 @@
-.home {
+.main-header {
+  border-bottom: 2px dashed @navigation-border;
 
+  .welcome {
+    padding: 15px 0;
+  }
+}
+
+.home {
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -57,5 +62,9 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    .btn {
+      .btn-style(@eastern-blue, @white);
+    }
   }
-}// home
+} // home

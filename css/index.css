@@ -168,6 +168,20 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.nav a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+  font-size: 2rem;
+  margin: 0 10px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +192,12 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.main-header {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.main-header .welcome {
+  padding: 15px 0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -224,4 +244,14 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  width: 85%;
+  padding: 12px 28px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 14px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
 }
