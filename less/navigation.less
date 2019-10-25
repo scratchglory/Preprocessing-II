@@ -1,1 +1,51 @@
 // Navigation Styles here
+
+.navigation {
+  padding: 2% 0;
+  border-bottom: 2px dashed @navigation-border;
+
+  .menu {
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      @media @mobile {
+        margin: 3% 0;
+      }
+    }
+
+    @media @mobile {
+      margin-left: 0%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    } // media
+  } // menu
+
+  .nav {
+    margin-right: 24%;
+    a {
+      padding: 5px;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      color: @font-color;
+      font-size: 1.75rem;
+      margin: 0 10px;
+
+      // STRETCH
+      &:hover {
+        .hover(gold, @eastern-blue, 22px);
+      }
+    } // a
+
+    @media @mobile {
+      margin: 0%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  } // nav
+} // navigation

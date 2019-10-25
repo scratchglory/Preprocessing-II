@@ -1,24 +1,52 @@
-.home {
+.container {
+  @media @mobile {
+    max-width: 92%;
+  }
+}
 
+.main-header {
+  border-bottom: 2px dashed @navigation-border;
+
+  .welcome {
+    padding: 15px 0;
+  }
+}
+
+.home {
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      //   width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+        @media @mobile {
+          width: 98%;
+        }
       }
     }
   }
@@ -26,6 +54,11 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -45,6 +78,10 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
 
   .content-pick {
@@ -56,6 +93,26 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 75%;
+      }
+    }
+
+    .btn {
+      .btn-style(@eastern-blue, @white);
+      // STRETCH GOAL
+      &:hover {
+        .hover(gold, @eastern-blue, 24px);
+      }
+      @media @mobile {
+        width: 100%;
+      }
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
-}// home
+} // home
